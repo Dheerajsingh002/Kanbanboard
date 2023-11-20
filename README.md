@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+Task:- https://quicksell.notion.site/Frontend-assignment-fa2f7f8aaada4099916994bad6ec70c2
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
