@@ -1,4 +1,3 @@
-// Board.js
 import React, { useState, useEffect } from 'react';
 import Card from './Card';
 
@@ -34,7 +33,7 @@ const Board = ({ tickets,users, displayOption }) => {
 
   const groupByOptions = {
     status: 'status',
-    user: 'assignee',
+    user: 'user',
     priority: 'priority',
   };
 

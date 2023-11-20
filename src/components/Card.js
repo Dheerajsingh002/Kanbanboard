@@ -1,12 +1,9 @@
-// Card.js
+
 const Card = ({ ticket, users, displayOption }) => {
-  // Helper function to get user name by ID
   const getUserById = (userId, users) => {
     const user = users.find((user) => user.id === userId);
     return user ? user.name : 'Unknown User';
   };
-
-  // Helper function to map priority level to its label
   const getPriorityLabel = (priority) => {
     switch (priority) {
       case 4:
@@ -24,7 +21,6 @@ const Card = ({ ticket, users, displayOption }) => {
     }
   };
 
-  const assignee = displayOption === 'user' ? getUserById(ticket.userId, users) : ticket.assignee;
   const priorityLabel = getPriorityLabel(ticket.priority);
 
   return (
@@ -35,7 +31,7 @@ const Card = ({ ticket, users, displayOption }) => {
       <div className="ticket-id">{ticket.id}</div>
       <div className="title">{ticket.title}</div>
       <div className="status">{ticket.status}</div>
-      <div className="assignee">{assignee}</div>
+      <div className="tag">{ticket.tag}</div>
     </div>
   );
 };
